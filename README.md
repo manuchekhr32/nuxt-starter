@@ -1,75 +1,34 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 Boilerplate with Vite, TypeScript, ESLint, Prettier, Tailwind CSS, Docker
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a boilerplate for starting Nuxt3 projects with Vite, TypeScript, ESLint, Prettier, Tailwind CSS, Docker, and custom composable utilities for API handling (`useApi`) and metadata management (`useMeta`).
 
-## Setup
+## Features
 
-Make sure to install the dependencies:
+- **Vite**: Utilize the fast build tool for web development.
+- **TypeScript**: Write safer and more maintainable code with TypeScript.
+- **ESLint & Prettier**: Maintain code quality and consistency with ESLint and Prettier.
+- **Tailwind CSS**: Rapidly build custom user interfaces with Tailwind CSS.
+- **Docker**: Containerize your application for easy deployment and scalability.
+- **Custom Composables**: Simplify API handling and metadata management with custom composable utilities like `useApi` and `useMeta`.
 
-```bash
-# npm
-npm install
+## Prerequisites
 
-# pnpm
-pnpm install
+Before getting started, ensure you have the following installed:
 
-# yarn
-yarn install
+- [Node.js](https://nodejs.org/) (v18 or higher but LTS v20.11 recommended)
+- [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/) or [Yarn](https://yarnpkg.com/) package manager (pnpm recommended)
+- [Docker](https://www.docker.com/) (if you plan to use Docker for containerization)
 
-# bun
-bun install
-```
+## Custom Composables
+This boilerplate includes custom composable utilities for simplifying common tasks:
 
-## Development Server
+- `useApi`: Provides utilities for handling API requests.
+- `useMeta`: Manages metadata for pages, such as title, description, and other SEO-related attributes. 
+Feel free to extend these utilities or add your own custom composable functions as needed.
 
-Start the development server on `http://localhost:3000`:
+## Configuration
+- __ESLint & Prettier__: Configuration files for ESLint and Prettier can be found in the project root.
+- __Tailwind CSS__: Customize Tailwind CSS settings in the tailwind.config.js file.
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contributing
+Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
