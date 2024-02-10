@@ -31,7 +31,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'vue'],
+  plugins: ['@typescript-eslint', 'vue', 'simple-import-sort'],
   rules: {
     'linebreak-style': ['error', 'unix'],
     quotes: ['warn', 'single'],
@@ -42,5 +42,7 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/no-multiple-template-root': 'warn',
     'prettier/prettier': 'warn',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 }
