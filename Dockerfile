@@ -7,9 +7,9 @@ COPY .env ./
 
 RUN npm i
 
-COPY . .
-
 RUN npm run build
+
+COPY . .
 
 EXPOSE 3000
 
