@@ -13,9 +13,6 @@ module.exports = {
   ],
   overrides: [
     {
-      env: {
-        node: true,
-      },
       files: [
         '.eslintrc.{js,cjs}',
         './components/**/*.{js,vue,ts}',
@@ -29,7 +26,6 @@ module.exports = {
       ],
     },
   ],
-  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
