@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="bg-green-100">
     <nav>
       <ul>
         <li>
