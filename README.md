@@ -23,7 +23,7 @@ Before getting started, ensure you have the following installed:
 This boilerplate includes custom composable utilities for simplifying common tasks:
 
 - `useApi`: Provides utilities for handling API requests.
-- `useMeta`: Manages metadata for pages, such as title, description, and other SEO-related attributes. 
+- `useMeta`: Manages metadata for pages, such as title, description, and other SEO-related attributes.
 Feel free to extend these utilities or add your own custom composable functions as needed.
 
 ## Configuration
