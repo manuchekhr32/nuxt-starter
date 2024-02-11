@@ -17,7 +17,6 @@ FROM node:20.11-alpine
 
 WORKDIR /usr/src/nuxt-starter
 
-COPY --from=builder /usr/src/nuxt-starter/.output  .
-COPY --from=builder /usr/src/nuxt-starter/.nuxt  .
+COPY --from=builder /usr/src/nuxt-starter .
 
 ENTRYPOINT ["node", ".output/server/index.mjs"]
