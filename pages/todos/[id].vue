@@ -11,7 +11,8 @@ const $api = useApi()
 const data = await useAsyncData(async () => {
   try {
     return $api.$get(`/todos/${$route.params.id}`)
-  } catch {
+  }
+  catch {
     showError({
       statusCode: 404,
     })

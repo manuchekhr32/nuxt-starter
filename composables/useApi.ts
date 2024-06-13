@@ -42,7 +42,7 @@ export const useApi = (apiUrl?: string) => {
         .then((response: T | any) => {
           resolve(response)
         })
-        .catch((error) => reject(error.response))
+        .catch(error => reject(error.response))
     })
   }
 
@@ -56,7 +56,7 @@ export const useApi = (apiUrl?: string) => {
         .then((response: T | any) => {
           resolve(response)
         })
-        .catch((error) => reject(error.response))
+        .catch(error => reject(error.response))
     })
   }
 
@@ -70,7 +70,7 @@ export const useApi = (apiUrl?: string) => {
         .then((response: T | any) => {
           resolve(response)
         })
-        .catch((error) => reject(error.response))
+        .catch(error => reject(error.response))
     })
   }
 
@@ -84,7 +84,7 @@ export const useApi = (apiUrl?: string) => {
         .then((response: T | any) => {
           resolve(response)
         })
-        .catch((error) => reject(error.response))
+        .catch(error => reject(error.response))
     })
   }
 

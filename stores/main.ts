@@ -5,7 +5,7 @@ export const useMainStore = defineStore('main', {
     count: 0,
   }),
   getters: {
-    getCount: (state) => state.count,
+    getCount: state => state.count,
   },
   actions: {
     increase() {

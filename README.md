@@ -1,11 +1,11 @@
 # Nuxt3 Boilerplate with Vite, TypeScript, ESLint, Prettier, Tailwind CSS, Pinia & Docker
 
-This is a boilerplate for starting Nuxt3 projects with Vite, TypeScript, ESLint, Prettier, Tailwind CSS, Pinia, Docker, and custom composable utilities for API handling (`useApi`) and metadata management (`useMeta`).
+This is a boilerplate for starting Nuxt3 projects with Vite, TypeScript, ESLint, Stylistic, Tailwind CSS, Pinia, Docker, and custom composable utilities for API handling (`useApi`) and metadata management (`useMeta`).
 
 ## Features
 - **Vite**: Utilize the fast build tool for web development.
 - **TypeScript**: Write safer and more maintainable code with TypeScript.
-- **ESLint & Prettier**: Maintain code quality and consistency with ESLint and Prettier.
+- **ESLint & Stylistic**: Maintain code quality and consistency with ESLint (Flat config) and Stylistic.
 - **Tailwind CSS**: Rapidly build custom user interfaces with Tailwind CSS.
 - **Pinia**: Best store for vue & nuxt
 - **Docker**: Containerize your application for easy deployment and scalability.

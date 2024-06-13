@@ -6,5 +6,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [eslintPlugin()],
   },
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 })
