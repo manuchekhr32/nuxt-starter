@@ -1,6 +1,6 @@
 import simpleImportSort from "eslint-plugin-simple-import-sort";
-import eslintConfigPrettier from "eslint-config-prettier";
 import { createConfigForNuxt } from "@nuxt/eslint-config/flat";
+import prettierPlug from "eslint-plugin-prettier/recommended";
 
 export default createConfigForNuxt({
   files: [
@@ -21,11 +21,19 @@ export default createConfigForNuxt({
     "no-console": "warn",
   },
 })
-  .prepend(eslintConfigPrettier)
-  .prepend(simpleImportSort.configs)
+  .prepend(prettierPlug, simpleImportSort.configs)
   .override("nuxt/typescript/rules", {
     rules: {
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-explicit-any": "warn",
     },
+        })
+  .override("nuxt/vue/rules", {
+    rules: {
+      "vue/max-attributes-per-line": "off",
+      "vue/html-self-closing": "off",
+    },
+  })
+  .overrideRules({
+    "prettier/prettier": "warn",
   });
