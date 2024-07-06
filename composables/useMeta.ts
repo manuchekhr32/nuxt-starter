@@ -1,25 +1,25 @@
-import type { UseSeoMetaInput } from '@unhead/schema'
+import type { UseSeoMetaInput } from "@unhead/schema";
 
 interface IMetaConfig
   extends Partial<
     Pick<
       UseSeoMetaInput,
-      | 'ogSiteName'
-      | 'ogType'
-      | 'author'
-      | 'ogLocale'
-      | 'publisher'
-      | 'ogImageType'
-      | 'ogImageWidth'
-      | 'ogImageHeight'
-      | 'ogImageAlt'
-      | 'themeColor'
+      | "ogSiteName"
+      | "ogType"
+      | "author"
+      | "ogLocale"
+      | "publisher"
+      | "ogImageType"
+      | "ogImageWidth"
+      | "ogImageHeight"
+      | "ogImageAlt"
+      | "themeColor"
     >
   > {
-  title?: string
-  description?: string
-  creator?: string
-  image?: string
+  title?: string;
+  description?: string;
+  creator?: string;
+  image?: string;
 }
 
 export const useMeta = (meta: IMetaConfig) => {
@@ -35,5 +35,5 @@ export const useMeta = (meta: IMetaConfig) => {
     ogImage: meta?.image,
     ogImageUrl: meta?.image,
     twitterImage: meta?.image,
-  })
-}
+  });
+};

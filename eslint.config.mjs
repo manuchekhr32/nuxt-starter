@@ -1,6 +1,7 @@
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import { createConfigForNuxt } from "@nuxt/eslint-config/flat";
 import prettierPlug from "eslint-plugin-prettier/recommended";
+import tailwindPlug from "eslint-plugin-tailwindcss";
 
 export default createConfigForNuxt({
   files: [
@@ -21,13 +22,17 @@ export default createConfigForNuxt({
     "no-console": "warn",
   },
 })
-  .prepend(prettierPlug, simpleImportSort.configs)
+  .prepend(
+    prettierPlug,
+    simpleImportSort.configs,
+    tailwindPlug.configs["flat/recommended"],
+  )
   .override("nuxt/typescript/rules", {
     rules: {
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-explicit-any": "warn",
     },
-        })
+  })
   .override("nuxt/vue/rules", {
     rules: {
       "vue/max-attributes-per-line": "off",
@@ -36,4 +41,5 @@ export default createConfigForNuxt({
   })
   .overrideRules({
     "prettier/prettier": "warn",
+    "simple-import-sort": "error",
   });
